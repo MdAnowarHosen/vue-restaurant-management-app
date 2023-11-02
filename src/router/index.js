@@ -35,7 +35,7 @@ const routes = [
     component: AddRestro
   },
   {
-    path: '/update/restaurant',
+    path: '/update/restaurant/:id',
     name: 'UpdateRestro',
     component: UpdateRestro
   },

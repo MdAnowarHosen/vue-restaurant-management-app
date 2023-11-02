@@ -19,7 +19,7 @@
           <td>{{ restaurant.address }}</td>
           <td>{{ restaurant.contact }}</td>
           <td class="action">
-            <a href="#">Edit</a>
+            <RouterLink :to="'/update/restaurant/'+restaurant.id">Edit</RouterLink>
             <a href="#">Delete</a>
           </td>
         </tr>
