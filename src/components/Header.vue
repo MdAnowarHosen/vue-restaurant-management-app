@@ -5,7 +5,6 @@
             <li><router-link to="/about">About</router-link></li>
             <li><a to="#">Contact</a></li>
             <li v-show="loggedIn"><router-link to="/add/restaurant">Add Restaurant</router-link></li>
-            <li v-show="loggedIn"><router-link to="/update/restaurant">Update Restaurant</router-link></li>
             <li v-show="!loggedIn"><router-link to="/sign-up">Register</router-link></li>
             <li v-show="!loggedIn"><router-link to="/login">Login</router-link></li>
             <li v-show="loggedIn"><a href="#" v-on:click="logout()">Logout</a></li>
