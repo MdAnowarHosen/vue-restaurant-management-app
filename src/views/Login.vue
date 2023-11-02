@@ -1,5 +1,6 @@
 <template>
   <h1>Login</h1>
+  <img alt="Vue logo" src="../assets/restro-logo.jpg" width="100">
   <div class="register">
     <input type="email" v-model="email" placeholder="Enter Email" />
     <input type="password" v-model="password" placeholder="Enter Password" />

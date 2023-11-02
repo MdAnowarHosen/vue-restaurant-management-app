@@ -1,5 +1,6 @@
 <template>
     <h1>Sign Up</h1>
+    <img alt="Vue logo" src="../assets/restro-logo.jpg" width="100">
     <div class="register">
         <input type="text" v-model="name" placeholder="Enter Name" />
         <input type="email" v-model="email" placeholder="Enter Email" />

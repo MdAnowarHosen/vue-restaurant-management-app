@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
+    <img alt="Vue logo" src="../assets/restro-logo.jpg" width="100">
     <h1>Hello, {{ name }}</h1>
     <h2>All Restaurants</h2>
 
@@ -48,9 +48,12 @@ export default {
 
   async mounted() {
     let user = localStorage.getItem('user-info');
-    this.name = JSON.parse(user).name;
+    
     if (!user) {
       this.$router.push({ name: "login" });
+    }
+    else{
+      this.name = JSON.parse(user).name;
     }
 
     // get restaurants
