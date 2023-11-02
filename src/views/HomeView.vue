@@ -19,11 +19,11 @@
           <td>{{ restaurant.address }}</td>
           <td>{{ restaurant.contact }}</td>
           <td class="action">
-            <RouterLink :to="'/update/restaurant/'+restaurant.id">Edit</RouterLink>
-            <a href="#">Delete</a>
+            <RouterLink :to="'/update/restaurant/' + restaurant.id">Edit</RouterLink>
+            <a href="#" v-on:click="deleteData(restaurant.id)">Delete</a>
           </td>
         </tr>
-  
+
       </table>
     </div>
   </div>
@@ -73,6 +73,19 @@ export default {
         this.restaurants = results.data;
         console.warn(results.data);
       }
+    },
+    async deleteData(id) {
+
+      let results = await axios.delete("http://localhost:3000/restaurant/" + id);
+
+      if (results.status == 201 || results.status == 200) {
+        // alert("Restaurant deleted successfully");
+        // get restaurants
+        await this.getRestro();
+      } else {
+        // alert("Failed to delete restaurant");
+      }
+
     }
   }
 
@@ -101,15 +114,17 @@ th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
-.action a{
+
+.action a {
   margin: 0 5px;
   background-color: rgb(83, 82, 82);
-  color:aliceblue;
+  color: aliceblue;
   padding: 5px 10px;
   border-radius: 5px;
   text-decoration: none;
 }
-.action a:hover{
+
+.action a:hover {
   background-color: rgb(56, 55, 55);
 }
 </style>
