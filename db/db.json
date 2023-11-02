@@ -1,0 +1,72 @@
+{
+  "users": [
+    {
+      "name": "Anowar",
+      "email": "anowar@gmail.com",
+      "password": "1234",
+      "id": 1
+    },
+    {
+      "name": "Anowar",
+      "email": "aj@ab.com",
+      "password": "12345",
+      "id": 2
+    },
+    {
+      "name": "Anowar",
+      "email": "anowar@test.com",
+      "password": "1234",
+      "id": 3
+    },
+    {
+      "name": "Aj",
+      "email": "aj@test.com",
+      "password": "1234",
+      "id": 4
+    },
+    {
+      "name": "Jony",
+      "email": "jony@test.com",
+      "password": "1234",
+      "id": 5
+    },
+    {
+      "name": "Add",
+      "email": "dsa@ad.com",
+      "password": "1234",
+      "id": 6
+    },
+    {
+      "name": "AJ",
+      "email": "ajtest.test.com",
+      "password": "1234",
+      "id": 7
+    },
+    {
+      "name": "adfasd",
+      "email": "dsfads@dad.com",
+      "password": "dfadfadgad",
+      "id": 8
+    },
+    {
+      "name": "Anas Anowar",
+      "email": "anas@gmail.com",
+      "password": "1234",
+      "id": 9
+    }
+  ],
+  "restaurant": [
+    {
+      "name": "Dhaka Shop",
+      "address": "Bangladesh",
+      "contact": 101,
+      "id": 1
+    },
+    {
+      "name": "dfadf",
+      "address": "dfdfsd",
+      "contact": "dafdsf",
+      "id": 2
+    }
+  ]
+}
