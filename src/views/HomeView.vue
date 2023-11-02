@@ -1,7 +1,7 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <h1>Hello, {{ name }}</h1>
   </div>
 </template>
 
@@ -11,8 +11,23 @@ import HelloWorld from '@/components/HelloWorld.vue'
 
 export default {
   name: 'HomeView',
+  data()
+  {
+    return{
+      name: '',
+    }
+  },
   components: {
     HelloWorld
-  }
+  },
+ 
+  mounted(){
+        let user = localStorage.getItem('user-info');
+        this.name = JSON.parse(user).name;
+        if(!user)
+        {
+            this.$router.push({name:"login"});
+        }
+    },
 }
 </script>
